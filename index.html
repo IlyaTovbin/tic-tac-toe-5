@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/ilya.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ilya Tovbin</title>
+</head>
+<body class="body-bg">
+
+    <div class="containerr border-radius overflow-hidden">
+        <div class="row border-radius">
+
+            <!-- Menu -->
+
+            <div class="col-12 col-lg-3 bg-navy nav-min-h">
+                <div class="profile-info py-1">
+                    <div class="text-white row pt-2 d-flex justify-content-center">
+                        <div class="my-image pl-5 pr-5 d-flex justify-content-center col-4 col-sm-3 col-md-2 col-lg-6">
+                            <img src="imgs/ilya.jpg" class="border p-1" alt="Ilya picture">
+                        </div>
+                        <div class="job col-6 col-sm-7 col-md-8 col-lg-12 mt-1 p-0">
+                            <h1 class="fs-2">Ilya Tovbin</h1>
+                            <p class="font-weight-bold">Web Developer</p>
+                        </div>
+                        <div class="nav-bar-icon col-2 col-sm-2 col-md-2">
+                            <div id="nav-bar" class="my-icon-nav pointer">
+                                <p id="line-1" class="line-1 line border-radius"></p>
+                                <p id="line-2" class="line-2 line border-radius"></p>
+                                <p id="line-3" class="line-3 line border-radius"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="nav" class="my-nav pl-3 pr-0">
+                    <ul class="w-100  p-0 color-grey fs-1-5">
+                        <li class="pointer nav-item w-100 p-2" onclick="scrollToY(0)"><i class="fa fa-home mr-1"></i>  <a class="pointer main-page" id="section1" href="#">Main</a></li>
+                        <li class="pointer nav-item w-100 p-2" onclick="scrollToY(53.725)"><i class="fa fa-user-circle mr-1"></i>  <a class="pointer " id="section2" href="#">About</a></li>
+                        <li class="pointer nav-item w-100 p-2" onclick="scrollToY(107.45)"><i class="fa fa-cube mr-1"></i>  <a class="pointer" id="section3" href="#">Projects</a></li>
+                        <li class="pointer nav-item w-100 p-2" onclick="scrollToY(161.175)"><i class="fa fa-envelope-o mr-1"></i>  <a class="pointer" id="section4" href="#">Contact</a></li>
+                    </ul>
+                    <div class="spacer"></div>
+                    <div class="icons fs-1-5 color-grey">
+                            <i onclick='redirectTo("https://github.com/IlyaTovbin")' class="fa fa-github pointer p-1"></i>
+                            <i onclick='redirectTo("https://www.linkedin.com/in/ilya-tovbin/")' class="fa fa-linkedin-square pointer p-1"></i>
+                            <i onclick='redirectTo("https://www.facebook.com/ilya.xivo/")' class="fa fa-facebook pointer p-1"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /Menu -->
+
+            <!-- Content  -->
+            <div id="contentScroller" class="content-outler col-12 col-lg-9 bg-light section-min-h">
+                <div class="scroller-list" id="scroller-list">
+                    <div class="content-inner-1  section-1" >
+                        <div class="content-inner-darker p-1">
+                            <div class="content-inner-main border main-page-box">
+                                <div class="content-box  text-white">
+                                    <h1 class="center content-inner-main__h1 fs-5">Hello!</h1>
+                                    <p class="center content-inner-main__p p-fs-1-8">My name is <span class="font-weight-bold">Ilya Tovbin</span>, and I'm a Fullstack web developer </p>
+                                    <p class="center about-link fofa fs-1 pointer mt-2" id="about-page-link" onclick="scrollToY(53.725)"><i class="fa fa-user-circle"></i>  Learn more about me</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-inner-2 mt-5 section-2" >
+                        <div class="bg-image-about">
+                            <div class="content-inner-darker p-1">
+                                <div class="content-inner-main border main-page-box">
+                                    <div class="content-box text-white">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-content-box p-3">
+                            <h3 class="my-3">About Me</h3>
+                            <p class="about-content">My name is <span class="font-weight-bold">Ilya Tovbin</span>, I’m a Fullstack Web Developer currently working as a freelancer, I specialize in transforming beautiful designs into full-fledged interactive web applications for various clients all around the world.</p>
+                            <p class="about-content mt-3">My job involves doing what I love, developing new websites and web applications. I absolutely love learning new things and taking on new challenges. A more detailed look at my professional capabilities and experience is available in my <a href="files/Ilya Tovbin CV.docx" class="email-link pointer">English </a> or <a href="files/איליה טוב-בין CV .docx" class="email-link pointer">Hebrew</a> resume.</p>
+                            <p class="about-content mt-3 center border-dotes bg-grey">"Creativity Is Intelligence Having Fun."  <i>Albert Einstein</i></p>
+                            <p class="about-content mt-3 center"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+                        </div>
+                    </div>
+                    <div class="content-inner-3 border mt-3-5 section-3" >
+                        <div class="bg-image-projects">
+                            <div class="content-inner-darker p-1">
+                                <div class="content-inner-main border main-page-box">
+                                    <div class="content-box text-white">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-inner-4 border mt-6 section-4" >
+                        <div class="bg-image-contact">
+                            <div class="content-inner-darker p-1">
+                                <div class="content-inner-main border main-page-box">
+                                    <div class="content-box text-white">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-content-box p-3">
+                            <h3 class="my-3">Contact</h3>
+                            <p class="contact-content">Want to get in touch? Whether you're interested in working on a project together or just want to say hello, feel free to email me at <span class="email-link pointer">ilyaxiv0@gmail.com</span> and I'll get back to you as soon as I can!</p>
+                            <p class="contact-content">You can also check out my social links in the footer of the sidebar to get in touch that way.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Content  -->
+
+        </div>
+    </div>
+<script src="js/app.js"></script>
+</body>
+</html>
