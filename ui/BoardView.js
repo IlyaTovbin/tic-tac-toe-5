@@ -1,4 +1,4 @@
-import { GameProcess } from '../service/GameProcess.js';
+
 import { Menu } from './Menu.js';
 
 export class BoardView {
@@ -17,14 +17,20 @@ export class BoardView {
             let tr = document.createElement('tr');
             for(let j = 0; j < this.game.size; j++){
                 let td = document.createElement("td");
-                td.setAttribute('id', i + '-' + j);
+                td.setAttribute('id', 'xo-' + i + '-' + j);
                 td.value = this.game.matrixObj.matrix[i][j];
-                // td.addEventListener('click', () => this.eventCLick(2));
+                td.addEventListener('click', () => this.playerClick(i, j));
                 tr.appendChild(td);
             }
             table.appendChild(tr);
         }
         this.container.appendChild(table);
+    }
+
+    playerClick(i, j){
+        this.game.playerClick(i, j);
+        document.getElementById('xo-' + i + '-' + j)
+        .innerText = this.game.getMatrixObj().getValueByIndexes(i, j);
     }
 
     appendEndBtn(){

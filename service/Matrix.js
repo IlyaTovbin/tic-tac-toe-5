@@ -15,4 +15,12 @@ export default class Matrix {
         }
     }
 
+    updateMatrix(i, j, turn){
+        this.matrix[i][j] = turn;
+    }
+
+    getValueByIndexes(i, j){
+        return this.matrix[i][j];
+    }
+
 }
