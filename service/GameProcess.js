@@ -1,6 +1,9 @@
 import Matrix from './Matrix.js';
+import GameLogic from './GameLogic.js';
 
 const defaultParameter = 3;
+
+
 
 export class GameProcess{
 
@@ -9,6 +12,7 @@ export class GameProcess{
         this.condition = condition;
         this.turn = 'X';
         this.matrixObj = new Matrix(this.size);
+        
     }
 
     nextTurn(){
@@ -18,17 +22,15 @@ export class GameProcess{
     playerClick(i, j){
         if(this.matrixObj.getValueByIndexes(i, j) === ' '){
             this.matrixObj.updateMatrix(i, j, this.turn);
-            this.checkWin(i, j);
-            this.nextTurn();
+            if( GameLogic.checkWin(i, j, this)){
+                
+            }else{
+                this.nextTurn();
+            }
         }
     }
 
     getMatrixObj(){
         return this.matrixObj;
-    }
-
-    checkWin(i, j){
-        this.matrixObj.getValueByIndexes(i, j)
-        
     }
 }

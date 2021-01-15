@@ -1,8 +1,12 @@
 *Matrix click event 1
 *update only one td 1
-*game check *2 0
-*save to local store 0
+*game check *2 1
+*get winner prams 0
 *win window ui 0
+*save to local store 0
+
+read about
+ *export default class
 
 
 

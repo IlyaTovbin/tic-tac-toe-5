@@ -27,7 +27,7 @@ export class Menu {
         let condition = parseInt(document.getElementById('condition-input').value);
 
         let gameProc;
-        if(size > 2 && condition > 2){
+        if(size && condition){
             gameProc = new GameProcess(size, condition);
         }else{
             gameProc = new GameProcess();
