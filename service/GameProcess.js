@@ -22,8 +22,8 @@ export class GameProcess{
     playerClick(i, j){
         if(this.matrixObj.getValueByIndexes(i, j) === ' '){
             this.matrixObj.updateMatrix(i, j, this.turn);
-            if( GameLogic.checkWin(i, j, this)){
-                
+            if( GameLogic.checkWin(i, j, this) ){
+                console.log(GameLogic.getWinnerParams());
             }else{
                 this.nextTurn();
             }

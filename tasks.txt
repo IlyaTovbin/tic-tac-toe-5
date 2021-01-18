@@ -6,7 +6,7 @@
 *save to local store 0
 
 read about
- *export default class
+ *static private functions
 
 
 
